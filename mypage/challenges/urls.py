@@ -11,7 +11,7 @@ urlpatterns = [
 
 
     #seeting url and view dynamically
-    path("",views.index),
+    path("",views.index,name='index'),
     path("<int:month>",views.monthly_challenge_number),
     path("<str:month>",views.monthly_challenge,name='month-challenge')
 
